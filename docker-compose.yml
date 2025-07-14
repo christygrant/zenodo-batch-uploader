@@ -1,0 +1,15 @@
+services:
+  zenodo_uploader:
+    build:
+      context: .
+    environment:
+      - ZENODO_TOKEN=${ZENODO_TOKEN}
+    volumes:
+      - .:/app                                # Mounts the project directory
+      - ${DOWNLOADS_PATH}:/mnt/downloads      # Mounts external downloads dir
+      - ./logs:/app/logs                      # Logs live inside the project
+    entrypoint:
+      - python3
+      - batch_upload.py
+      - --downloads=/mnt/downloads            # Pass the downloads directory to the script
+
