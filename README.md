@@ -13,7 +13,7 @@ Populate dataset_shortnames.txt file with the names of datasets you want to uplo
 Create a `.env` file like this:
 
 ```
-DOWNLOADS_PATH=<path to downloads directory, probably creataed by the dataset-downloader>  
+DOWNLOADS_PATH=<path to downloads directory, probably created by the dataset-downloader>  
 ZENODO_TOKEN=<Zenodo Sandbox Token>
 ```
 
