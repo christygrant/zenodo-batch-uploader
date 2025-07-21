@@ -20,6 +20,7 @@ ZENODO_TOKEN=<Zenodo Sandbox Token>
 * If you want to use production token, the batch_upload.py code has to be tweaked to remove the --test args in "run_upload".
   
 Run: 
+
 docker compose build
 
 docker compose up
