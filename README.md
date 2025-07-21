@@ -21,4 +21,5 @@ ZENODO_TOKEN=<Zenodo Sandbox Token>
   
 Run: 
 docker compose build
+
 docker compose up
